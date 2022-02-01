@@ -7,7 +7,7 @@ public class FormulaExercise : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Question2();
+        Question3();
     }
 
     // Update is called once per frame
@@ -46,5 +46,25 @@ public class FormulaExercise : MonoBehaviour
         vf2 = (m1vi1 + m2vi2) / m2;
 
         print($"final velocity = {vf2} ms");
+    }
+
+    void Question3()
+    {
+        /*
+           A 900kg car strikes a 1000kg car at rest from behind. 
+           The bumpers lock and they move forward together. 
+           If their new final velocity is equal to 18ms, 
+           what was the initial speed of the first car?
+
+        formula: m1v1i + m2v2i = (m1 + m2)vf
+        vi1?
+         */
+
+        float m1 = 900, vi1, m2 = 1000, vi2 = 0, vf = 18;
+        float m2vi2 = m1 * vi2;
+        float m1m2vf = (m1 + m2) * vf;
+        vi1 = (m1m2vf - m2vi2) / m1;
+
+        print($"initial velocity = {vi1} ms");
     }
 }
