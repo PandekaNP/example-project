@@ -7,6 +7,8 @@ public class FormulaExercise : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Question1();
+        Question2();
         Question3();
     }
 
@@ -22,6 +24,9 @@ public class FormulaExercise : MonoBehaviour
         (about 30 kmh) East. The momentum of the car is therefore.
 
         Formula: p = mv
+
+        p?
+        answer: p = 8000kgm/s 
          */
 
         float p, m = 1000, v = 8;
@@ -35,11 +40,14 @@ public class FormulaExercise : MonoBehaviour
          A 0.170kg pool ball travelling 6 ms hits 
         another 0.170kg ball at rest.  If the first ball stops 
         after the collision, how fast is the second ball moving?
-        vf2?
+        
         formula: m1v1i + m2v2i = m1v1f + m2v2f
+        
+        vf2?
+        answer: v2f = 6ms
          */
 
-        float m1=0.17f, vi1=6, m2 = 0.17f, vi2=0, vf1=0, vf2;
+        float m1 =0.17f, vi1=6, m2 = 0.17f, vi2=0, vf1=0, vf2;
         float m1vi1 = m1 * vi1;
         float m2vi2 = m2 * vi2;
         float m1vf2 = m1 * vf1;
@@ -58,6 +66,8 @@ public class FormulaExercise : MonoBehaviour
 
         formula: m1v1i + m2v2i = (m1 + m2)vf
         vi1?
+
+        answer: v1i = 38ms
          */
 
         float m1 = 900, vi1, m2 = 1000, vi2 = 0, vf = 18;
